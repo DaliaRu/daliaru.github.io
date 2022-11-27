@@ -455,6 +455,65 @@
           }
         }
 
+        @media only screen 
+          and (min-width: 1200px) 
+          and (max-height: 920px) 
+          and (-webkit-min-device-pixel-ratio: 1.5) {
+            .anim-btn-form {
+            width: 275px;
+            margin-bottom: 50px;
+            }
+            .center-anim-btn-form {
+              bottom: -35px;
+            }
+            .card-video-style {
+              object-fit: covers;
+              width: 100%; 
+              height: 450px;
+            }
+        }
+
+        /* Portrait */
+        @media only screen 
+          and (min-device-width : 768px) 
+          and (max-device-width : 1024px) 
+          and (orientation: portrait) 
+          and (-webkit-min-device-pixel-ratio: 1.5) {
+            .anim-btn-form {
+              width: 275px;
+              margin-bottom: 50px;
+            }
+            .center-anim-btn-form {
+              bottom: -35px;
+            }
+            .card-video-style {
+              object-fit: covers;
+              width: 100%; 
+              height: 330px;
+            }
+        }
+
+        /* Landscape */
+        @media only screen 
+          and (min-width: 1024px) 
+          and (max-height: 900px) 
+          and (orientation: landscape) 
+          and (-webkit-min-device-pixel-ratio: 1.5) {
+            .anim-btn-form {
+            width: 275px;
+            margin-bottom: 50px;
+            }
+            .center-anim-btn-form {
+              bottom: -35px;
+            }
+            .card-video-style {
+              object-fit: covers;
+              width: 100%; 
+              height: 450px;
+            }
+        }
+        
+
         .center-anim-btn-form {
           width: 400px;
           height: 60px;
@@ -515,6 +574,93 @@
 
         .imageBox:hover .hoverImg {
           display: block;
+        }
+
+        .portfolio-main-textas {
+          font-family: PresicavRg; 
+          font-size: 90px; 
+          line-height: 98px; 
+          text-align: center; 
+          color: #fff;
+        }
+
+        .portfolio-main-textas-funky {
+          font-family: PresicavRg; 
+          font-size: 90px; 
+          line-height: 98px; 
+          text-align: center; 
+          color: #fff;
+        }
+        
+        .portfolio-main-textas-tutotoons {
+          font-family: PresicavRg; 
+          font-size: 70px; 
+          line-height: 98px;
+        }
+
+        .portfolio-sub-header-textas {
+          font-family: PresicavXl; 
+          font-size: 30px; 
+          font-weight: 600;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-main-textas {
+              font-size: 40px;  
+              line-height: 50px; 
+            }
+            .portfolio-main-textas-funky {
+              font-size: 60px;  
+              line-height: 60px;
+            }
+            .portfolio-main-textas-tutotoons {
+              font-size: 40px;  
+              line-height: 50px;
+            }
+            .portfolio-sub-header-textas {
+              font-size: 20px; 
+            }
+        }
+
+        @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+          .portfolio-main-textas {
+              font-size: 50px;  
+              line-height: 30px; 
+            }
+            .portfolio-main-textas-funky {
+              font-size: 60px;  
+              line-height: 60px;
+            }
+            .portfolio-main-textas-tutotoons {
+              font-size: 50px;  
+              line-height: 30px; 
+            }
+            .portfolio-sub-header-textas {
+              font-size: 20px; 
+            }
+        }
+
+        .portfolio-sub-textas {
+          font-family: PresicavXl; 
+          font-size: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .portfolio-sub-textas {
+              font-size: 15px;  
+            }
+        }
+
+        @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+          .portfolio-sub-textas {
+              font-size: 15px;  
+            }
+        }
+
+        .contact-email-name {
+          font-family: PresicavLt;
+          color: #fff; 
+          font-size: 12px;
         }
     </style>
     <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -769,7 +915,7 @@
                   <div 
                     class="menu-overlay__item-wrapper split-text js-split-text" 
                     data-split-text-type="lines" 
-                    style="font-family: PresicavRg; font-size: 50px;">HOME
+                    style="font-family: PresicavRg; font-size: 40px;">HOME
                   </div>
                 </a>
                 <ul class="sub-menu">
@@ -780,7 +926,7 @@
                   <div 
                     class="menu-overlay__item-wrapper split-text js-split-text" 
                     data-split-text-type="lines" 
-                    style="font-family: PresicavRg; font-size: 50px;">PORTFOLIO
+                    style="font-family: PresicavRg; font-size: 40px;">PORTFOLIO
                   </div>
                 </a>
                 <!-- <ul class="sub-menu">
@@ -829,7 +975,7 @@
                   <div 
                     class="menu-overlay__item-wrapper split-text js-split-text" 
                     data-split-text-type="lines" 
-                    style="font-family: PresicavRg; font-size: 50px;">CONTACT
+                    style="font-family: PresicavRg; font-size: 40px;">CONTACT
                   </div>
                 </a>
                 <ul class="sub-menu">
@@ -841,7 +987,7 @@
                   <div 
                     class="menu-overlay__item-wrapper split-text js-split-text" 
                     data-split-text-type="lines" 
-                    style="font-family: PresicavRg; font-size: 50px;">ABOUT
+                    style="font-family: PresicavRg; font-size: 40px;">ABOUT
                   </div>
                 </a>
                 <ul class="sub-menu">
