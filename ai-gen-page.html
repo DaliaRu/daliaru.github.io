@@ -675,43 +675,6 @@
               line-height: 30px;
           }
         }
-
-        .grid {
-          display: block; /* Ne grid, o blokinis elementas */
-          column-count: 4; /* Kiek stulpelių - keičiam pagal poreikį */
-          column-gap: 30px; /* Tarpai tarp stulpelių */
-        }
-
-        .grid__item {
-          display: inline-block; /* Kad įsitaisytų į stulpelį */
-          margin-bottom: 30px; /* Tarpas tarp nuotraukų vertikaliai */
-          width: 100%; /* Leisti elementui užimti visą plotį */
-        }
-
-        .grid__item {
-          width: 100%; /* Nuotraukos pritaikymas */
-          height: auto; /* Palaiko nuotraukos aspektą */
-          object-fit: cover; /* Užpildo elementą */
-          transition: transform 0.3s ease-in-out; /* Zoom efektas */
-        }
-
-        .grid__item:hover {
-          transform: scale(1.1); /* Zoom efekto padidinimas */
-        }
-
-        .grid__item:hover {
-          cursor: pointer; /* Indikuoja, kad nuotrauka interaktyvi */
-        }
-
-        @media (max-width: 768px) {
-          .grid {
-            column-count: 2; /* Užfiksuoti mažesnius stulpelius mažesniuose ekranuose */
-          }
-        }
-
-
-
-
     </style>
     <link rel="preload" type="text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" type="./text/css" href="https://fonts.googleapis.com/css?family=Cinzel:400,700%7CRaleway:500,500i,600,700%7CMaterial+Icons&amp;display=swap"></noscript>
@@ -1039,8 +1002,7 @@
                     <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
                     <div class="w-100"></div>
                     <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                      <h3 class="portfolio-sub-textas">I was inspired by other artists and decided to create my own characters with their own stories.
-                        Projects designed using 3D assets.
+                      <h3 class="portfolio-sub-textas">This collection blends AI and art, redefining visual storytelling and exploring how AI transforms creativity.
                         </h3>
                     </div>
                   </div>
@@ -1069,11 +1031,11 @@
               </div>
               <div class="grid__item">
                 <div class="figure-image section-image">
-                  <a href="./src/assets/images/ai/04.png" data-size="1464x2208" data-title>
+                  <a href="./src/assets/images/ai/04.jpg" data-size="1464x2208" data-title>
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/04.png" src="#" alt="Image 3" width="1464" height="2208" style="width: 100%; height: 100%; object-fit: contain;">
+                            <img data-src="./src/assets/images/ai/04.jpg" src="#" alt="Image 3" width="1464" height="2208" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                       </div>
                     </div>
@@ -1112,7 +1074,9 @@
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/06.jpg" src="#" alt="Image 3" width="2688" height="4784" style="width: 100%; height: 100%; object-fit: contain;">
+                          <video autoplay muted loop class="video-main-player" style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="./src/assets/video/ai/red.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
                     </div>
@@ -1125,7 +1089,9 @@
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/07.jpg" src="#" alt="Image 3" width="1464" height="2208" style="width: 100%; height: 100%; object-fit: contain;">
+                          <video autoplay muted loop class="video-main-player" style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="./src/assets/video/ai/shreke.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
                     </div>
@@ -1164,7 +1130,9 @@
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/09.jpg" src="#" alt="Image 3" width="2496" height="4416" style="width: 100%; height: 100%; object-fit: contain;">
+                          <video autoplay muted loop class="video-main-player" style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="./src/assets/video/ai/library.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
                     </div>
@@ -1244,7 +1212,9 @@
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/15.jpg" src="#" alt="Image 3" width="3328" height="5888" style="width: 100%; height: 100%; object-fit: contain;">
+                          <video autoplay muted loop class="video-main-player" style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="./src/assets/video/ai/lab.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
                     </div>
@@ -1312,7 +1282,9 @@
                     <div class="hover-zoom__inner">
                       <div class="hover-zoom__zoom">
                         <div class="figure-image__wrapper-img" data-arts-parallax="data-arts-parallax" data-arts-parallax-factor="0.15">
-                            <img data-src="./src/assets/images/ai/fire.jpg" src="#" alt="Image 3" width="1024" height="1536" style="width: 100%; height: 100%; object-fit: contain;">
+                          <video autoplay muted loop class="video-main-player" style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="./src/assets/video/ai/fire-girl.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
                     </div>
@@ -1347,8 +1319,7 @@
                   <div class="section__headline mb-1 mb-md-2 mx-auto"></div>
                   <div class="w-100"></div>
                   <div class="section-content__heading split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
-                    <h3 class="portfolio-sub-textas">I was inspired by other artists and decided to create my own characters with their own stories.
-                      Projects designed using 3D assets.
+                    <h3 class="portfolio-sub-textas">This project used AI to create engaging images for slides, simplifying complex concepts and inspiring young minds about technology in education.
                       </h3>
                   </div>
                 </div>
@@ -1358,78 +1329,29 @@
         </div>
         <!-- - section CONTENT #1 -->
 
-          <!-- section IMAGES -->
+          <!-- section IMAGES SLIDES -->
           <section class="section section-slider-images pb-small">
             <div class="slider slider-images js-slider-images">
               <div class="swiper-container js-slider-images__slider" data-drag-mouse="true" data-drag-cursor="true" data-drag-class="slider-images_touched" data-auto-height="true" data-slides-per-view="1.5" data-centered-slides="data-centered-slides" data-space-between="120">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide overflow d-flex-centered text-center">
                     <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/1.jpg" width="1120" height="700" alt></div>
+                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/ai/slides/1Slide.jpg" width="1120" height="700" alt></div>
                     </div>
                   </div>
                   <div class="swiper-slide overflow d-flex-centered text-center">
                     <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/2.jpg" width="1120" height="700" alt></div>
+                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/ai/slides/2Slide.jpg" width="1120" height="700" alt></div>
                     </div>
                   </div>
                   <div class="swiper-slide overflow d-flex-centered text-center">
                     <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/3.jpg" width="1120" height="700" alt></div>
+                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/ai/slides/3Slide.jpg" width="1120" height="700" alt></div>
                     </div>
                   </div>
                   <div class="swiper-slide overflow d-flex-centered text-center">
                     <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/4.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/02.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/5.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/6.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/7.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/8.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div><div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/9.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/10.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/11.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/12.jpg" width="1120" height="700" alt></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide overflow d-flex-centered text-center">
-                    <div class="w-100 h-100" data-swiper-parallax="10%" data-swiper-parallax-zoom="00%">
-                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/tutotoons/13.jpg" width="1120" height="700" alt></div>
+                      <div class="slider__zoom-container w-100 h-100"><img class="swiper-lazy" src="#" data-src="./src/assets/images/ai/slides/4Slide.jpg" width="1120" height="700" alt></div>
                     </div>
                   </div>
                 </div>
@@ -1467,7 +1389,7 @@
               </div>
               <!-- - slider FOOTER -->
         </section>
-          <!-- - section IMAGES -->
+          <!-- - section IMAGES SLIDES -->
 
           <!-- Section margin top -->
           <section class="section section-slider-images pb-small"></section>
@@ -1484,13 +1406,13 @@
                 <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
                   <div class="figure-info split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
                     <div class="figure-info__option small-caps" style="font-family: PresicavRg;">Responsibilities</div>
-                    <div class="figure-info__value paragraph" style="font-family: PresicavLt; font-size: 12px;">3D Artist</div>
+                    <div class="figure-info__value paragraph" style="font-family: PresicavLt; font-size: 12px;">AI Artist</div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 section-properties__item mt-small">
                   <div class="figure-info split-text js-split-text" data-split-text-type="lines,words" data-split-text-set="words">
                     <div class="figure-info__option small-caps" style="font-family: PresicavRg;">Created</div>
-                    <div class="figure-info__value paragraph" style="font-family: PresicavLt; font-size: 12px;">2022 - present</div>
+                    <div class="figure-info__value paragraph" style="font-family: PresicavLt; font-size: 12px;">2023 - present</div>
                   </div>
                 </div>
               </div>

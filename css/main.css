@@ -11147,3 +11147,37 @@ small,
 .slider[data-arts-theme-text="dark"] a {
   color: #fff;
 }
+
+/* Grip Mansory UI */
+.grid {
+  display: block; /* Ne grid, o blokinis elementas */
+  column-count: 4; /* Kiek stulpelių - keičiam pagal poreikį */
+  column-gap: 30px; /* Tarpai tarp stulpelių */
+}
+
+.grid__item {
+  display: inline-block; /* Kad įsitaisytų į stulpelį */
+  margin-bottom: 30px; /* Tarpas tarp nuotraukų vertikaliai */
+  width: 100%; /* Leisti elementui užimti visą plotį */
+}
+
+.grid__item {
+  width: 100%; /* Nuotraukos pritaikymas */
+  height: auto; /* Palaiko nuotraukos aspektą */
+  object-fit: cover; /* Užpildo elementą */
+  transition: transform 0.3s ease-in-out; /* Zoom efektas */
+}
+
+.grid__item:hover {
+  transform: scale(1.1); /* Zoom efekto padidinimas */
+}
+
+.grid__item:hover {
+  cursor: pointer; /* Indikuoja, kad nuotrauka interaktyvi */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    column-count: 2; /* Užfiksuoti mažesnius stulpelius mažesniuose ekranuose */
+  }
+}
